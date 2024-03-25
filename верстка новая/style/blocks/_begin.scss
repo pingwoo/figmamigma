@@ -1,0 +1,52 @@
+.begin{
+    background: url(img/chocmain.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    border-radius: 30px;
+    margin-bottom: 72px;
+
+    h1{
+        font-size: 28px;
+        color: $white;
+        font-weight: 500;
+        padding: 381px 0 0 40px;
+        margin-bottom: 32px;
+    }
+    &__buttons{
+        padding-left: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: $white;
+
+        &__main{
+            span {   
+            align-items: center
+            }
+
+            &_orange{
+                @include buttons(14px, $white, $orange);
+            }
+            &_white{
+                border: 1px solid $white;
+                @include buttons(14px, $white, inherit);
+            }
+        }
+
+        &__scroll{
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            margin-right: 40px;
+            a{
+                height: 45px;
+                line-height: 45px;
+                img{
+                margin-left: 14px;
+                }
+            }
+        }
+    }
+
+}

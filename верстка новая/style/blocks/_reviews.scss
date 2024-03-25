@@ -1,0 +1,54 @@
+.reviews{
+    margin-top: 128px;
+    text-align: center;
+
+    h1{
+        @include h1(50px);
+    }
+
+    &_h1{
+        color: $orange;
+    }
+
+    &__scroll{
+        @include scroller(28px, 285px);
+
+        &__main{
+            height: 242px;
+
+            img{
+                align-items: center;
+            }
+
+            &_text{
+                margin-top: -40px;
+                background-color: $white;
+                height: 200px;
+                width: 360px;
+                border-radius: 15px;
+                
+                h2{
+                    padding: 56px 80px 24px;
+                    @extend %h2;
+                }
+
+                p{
+                    @extend %p;
+                    opacity: 70%;
+                    line-height: 1.28;
+                    letter-spacing: -0.32px;
+                }
+            }
+        }
+    }
+    &_button{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 128px;
+        span{
+            border: 1px solid $orange;
+            @include buttons(18px, inherit, inherit);
+        }
+        
+    }
+}

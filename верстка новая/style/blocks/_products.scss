@@ -1,0 +1,53 @@
+
+.products{
+    text-align: center;
+
+    h1{
+        @include h1(50px);
+    }
+
+    &_h1{
+        color: $orange;
+    }
+
+    &__scroll{
+
+        @include scroller(18px, 364px);
+
+        &__main{
+            height: 364px;
+            border-radius: 15px;
+            background: $white;
+            margin-bottom: 32px;
+
+            img{
+                margin: 32px 20px 0 20px;
+            }
+
+            &_text{
+                margin: 0 41px 83px 41px;
+
+                h2{
+                    @extend %h2;             
+                    line-height: 1.33;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    opacity: 70%;
+                    line-height: 1.16;
+                }
+
+                &_button{
+                    background-color: $main;
+                    width: 94px;
+                    border: 1px solid rgba(17, 17, 17, .1);
+                    border-radius: 100px;
+                    margin: 18px 47px 32px 47px;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+

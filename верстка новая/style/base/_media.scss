@@ -1,0 +1,162 @@
+@media(max-width:1115px){
+    .taste{
+        margin: 128px 0 128px 0 ;
+    
+        &__pics{
+            
+            img{
+            margin-bottom: 10px;
+            }
+    
+            &__main{
+                width: 250px;
+                height: 250px;
+                padding: 28px 25px;   
+            }
+        }    
+    }
+    
+    .sellers{
+        img{
+            width: 348px;
+            height: 444px;
+        }
+    }
+}
+
+@media(max-width:1024px){ 
+
+    %h2 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    %p {
+    font-size: 12px;
+    font-weight: 400;
+    } 
+  
+
+    .about{
+
+        h2{
+            margin: 22px 0 18px 0;
+        }
+        
+        hr{
+            height: 120px;
+        }
+    
+    }
+
+
+
+    .taste{
+
+        margin: 128px 0 128px 0 ;
+    
+        &__pics{
+            font-size: 12px;
+            img{
+            margin-bottom: 10px;
+            width: 198px;
+            }
+    
+            &__main{
+                width: 230px;
+                height: 230px;
+                padding: 23px 20px;   
+            }
+        }    
+    }
+
+    .recipe{
+
+        &__main{
+            &_video{
+                iframe{
+                width: 520px;
+                height: 400px;
+                border: 1px solid;
+                border-radius: 15px;
+                }
+            }
+        }
+    }
+
+    
+    .products{
+        &__scroll{
+            @include scroller(58px, 364px);
+            &__main{
+                img{
+                    margin: 32px 30px 0;
+                }
+            }
+        }
+    }
+
+
+
+    .sellers{
+
+        img{
+            width: 320px;
+            height: 424px;
+        }
+        &__pics{
+            margin-bottom: 10px;
+        }
+    
+        &__text{
+            &_button{
+                @include buttons(14px, $white, $orange);
+            }
+        }
+    }
+
+    .subscribe{
+
+        height: 310px;
+
+        &__text{
+            padding-top: 52px;
+
+            &_button{
+                @include buttons(14px, $white, $orange);
+            }
+        }
+    }
+
+    .contact{
+    padding: 20px 0 32px 0;
+    }
+
+
+    h1{
+        font-size: 22px !important;
+    }
+
+
+    .reviews{
+        margin-top: 128px;
+        text-align: center;
+    
+        h1{
+            @include h1(50px);
+        }
+    
+        &_h1{
+            color: $orange;
+        }
+    
+        &__scroll{
+                &__main{
+        
+                    &_text{
+                        width: 310px;
+                }
+            }
+        }
+    }
+}

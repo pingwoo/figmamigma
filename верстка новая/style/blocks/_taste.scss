@@ -1,0 +1,65 @@
+.taste{
+    margin: 128px 0 128px 0 ;
+
+    h1{
+        @include h1(28px);
+    }
+
+    p{
+        @extend %p;
+        line-height: 1.28;
+        letter-spacing: -0.32px;
+    }
+
+    &__text{
+        height: 156px;
+        width: 486px;
+        margin-bottom: 50px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        &_orange{
+            color: $orange;
+        }
+    }
+
+    &__pics{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.32px;
+
+        img{
+        margin-bottom: 36px;
+        }
+
+        &__main{
+            border-radius: 16px;
+            width: 270px;
+            height: 270px;
+            padding: 28px 28px 28px 36px;   
+        }
+
+        &_milkchoc{
+            @include taste($orange, $white);
+        }
+
+        &_even{
+            border: 1px solid $orange;
+            @include taste($white, inherit);
+
+        }
+
+        &_nuts{
+            @include taste($dark, $white);
+        }
+        
+        
+    }
+
+
+}

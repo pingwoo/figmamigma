@@ -1,0 +1,27 @@
+.subscribe{
+        background: url(img/subscribe.jpg) no-repeat;
+        background-size: contain;
+        height: 370px;
+        text-align: center;
+        color: $white;
+
+        &__text{
+            padding-top: 72px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+
+            h1{
+                @include h1(0);
+            }
+
+            p{
+                @extend %p;
+            }
+
+            &_button{
+                @include buttons(18px, $white, $orange);
+            }
+        }
+}

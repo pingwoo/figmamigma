@@ -1,0 +1,29 @@
+.sellers{
+    margin-top: 128px;
+
+    h1{
+        @include h1(50px);
+    }
+    
+    &_h1{
+        color: $orange;
+    }
+    
+    &__pics{
+        display: flex;
+        justify-content: space-between;
+        height: 464px;
+        margin-bottom: 32px;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        @extend %p;
+
+        &_button{
+            @include buttons(18px, $white, $orange);
+        }
+    }
+}

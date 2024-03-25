@@ -1,0 +1,65 @@
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 62px 0;
+    color: $white;
+
+    &__maintext{
+        font-size: 28px;
+        font-weight: 500;
+
+        &_h1{
+            color: $orange;
+        }
+    }
+    &__text{
+        display: flex;
+        gap: 63px;
+        font-size: 14px;
+
+        h2{
+            margin-bottom: 14px;
+            font-weight: 500;
+
+        }
+
+        p{
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+
+        &_icons{
+            @extend %icons;
+        }
+    }
+    a:hover{
+        color: $orange;
+    }
+}
+
+.navigation2{
+    color: $white;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 50px;
+
+    hr{
+        color: $white;
+        opacity: 10%;
+        height: 1px;
+        margin-bottom: 24px;
+    }
+
+    ul{
+        list-style: none;        
+        display: flex;
+        
+        li{
+            margin-right: 24px;
+        }
+
+        a:hover{
+            color: $orange;
+        }
+    }
+}

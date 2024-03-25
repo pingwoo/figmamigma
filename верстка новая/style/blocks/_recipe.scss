@@ -1,0 +1,53 @@
+.recipe{
+    margin: 128px 0 128px 0;
+    
+    h1{
+        @include h1(50px);
+    }
+
+    &_h1{
+        color: $orange;
+    }
+
+    &__main{
+        display: flex;
+
+       
+        &_video{
+            width: 600px;
+            height: 400px;
+            margin-right: 20px;
+
+            iframe{
+            width: 600px;
+            height: 400px;
+            border: 1px solid;
+            border-radius: 15px;
+            }
+        }
+
+        &_text{
+            width:516px;
+            height: 400px;
+            background-color: $white;
+            border-radius: 15px;
+            padding: 32px;
+
+            h2{
+                @extend %h2;
+                margin: 0 102px 28px 0;
+            }
+
+            ul{
+                margin-left: 20px;
+                font-size: 14px;
+                letter-spacing: -0.32px;
+                line-height: 1.28;
+
+                li:not(:last-child){
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
